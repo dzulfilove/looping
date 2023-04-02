@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Confirm Pop Up</title>
+</head>
+<body>
+	<h1>Confirm Pop Up</h1>
+
+	<script>
+		let counter = 0;
+		let isLooping = true;
+
+		while (isLooping) {
+			let confirmation = confirm("Apakah anda mau mengulang?");
+
+			if (confirmation) {
+				counter++;
+			} else {
+				isLooping = false;
+				alert("Perulangan sudah dilakukan sebanyak " + counter + " kali.");
+			}
+		}
+	</script>
+</body>
+</html>
